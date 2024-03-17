@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="fn"></p>
+    <p id="sn"></p>
+    <p id="bfswp"></p>
+    <p id="afswp"></p>
+    <p id="sum"></p>
+
+     <script> 
+    
+      var a = prompt('Enter your first number.');
+      var b = prompt('Enter your second number.');
+
+      if (!isNaN(a), !isNaN(b)) {
+
+        var nmf = parseInt(a);
+        var nms = parseInt(b);
+
+
+        document.getElementById('fn').innerHTML = "First number entered: " + nmf;
+      document.getElementById('sn').innerHTML = "Second number entered: " + nms;
+   
+      document.getElementById('bfswp').innerHTML = "The Two Inputs before Swap: " + nmf + ", " + nms;
+      [nmf, nms] = [nms, nmf]
+
+      document.getElementById('afswp').innerHTML = "The numbers in swapped order: " + "nmf: " + nmf + " nms: " + nms;
+      var sum = nmf + nms;
+      document.getElementById('sum').innerHTML = "The sum of the two values is calculated to be: " + sum;
+    
+
+      }
+    
+    </script>
+
+</body>
+</html>
